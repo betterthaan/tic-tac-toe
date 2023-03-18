@@ -16,5 +16,12 @@ namespace tic_tac_toe
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 newForm = new Form2(this.textBox1, this.comboBox1, this.comboBox2);
+            newForm.Show();
+            //передаем ссылку на textbox в форму Form2
+        }
     }
 }
